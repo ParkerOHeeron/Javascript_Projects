@@ -10,3 +10,8 @@ function myCon() { // My concatenate function
     sentence += " a lot from this book!";  // sentence = sentence + " a lot from this book!"
     document.getElementById("Concatenate").innerHTML = sentence;  // sending sentence to the concatenate id
 }
+
+function addition_Function() {
+    var addition = 2 + 2;
+    document.getElementById("Math").innerHTML = "2 + 2 = " + addition;
+}
