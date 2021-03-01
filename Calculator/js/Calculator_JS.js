@@ -75,7 +75,7 @@ const Perform_Calculation = {
     '=': (First_Operand, Second_Operand) => Second_Operand
 };
 
-function Calculator_Rreset() {
+function Calculator_Reset() {
     Calculator.Display_Value = '0';
     Calculator.First_Operand = null;
     Calculator.Wait_Second_Operand = false;
@@ -101,6 +101,18 @@ keys.addEventListener('click', (event) => {
 
     if(target.classList.contains('operator')) {
         Handle_Operator(target.value);
+        Update_Display();
+        return;
+    }
+
+    if (target.classList.contains('decimal')) {
+        Input_Decimal(target.value);
+        Update_Display();
+        return;
+    }
+
+    if (target.classList.contains('all-clear')) {
+        Calculator_Reset();
         Update_Display();
         return;
     }
