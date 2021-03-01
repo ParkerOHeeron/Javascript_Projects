@@ -38,10 +38,10 @@ function negation_Operator() {
 function inc_dec() {
     var x = 5;
     x++;
-    document.getElementById("Math9").innerHTML(x);
+    document.getElementById("Math9").innerHTML = x;
     var y = 5.25;
     y--;
-    document.getElementById("Math8").innerHTML(y);
+    document.getElementById("Math8").innerHTML = y;
 }
 
 function rng() {
